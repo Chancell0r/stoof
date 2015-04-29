@@ -3,13 +3,17 @@
 #include <assert.h>
 #include <string.h>
 #include <math.h>
+#include <iostream> 
 
-void main(int argc, char** argv ){
-	int input = atoi(argv[0]);
+
+int countPrimes(int n);
+
+int main(int argc, char** argv ){
+	int input = atoi(argv[1]);
 
 	int result = countPrimes(input);
 
-	cout << result;
+	std::cout << "Count of Primes Below " <<  argv[1] << " is: " << result << "\n";
 }
 
 int countPrimes(int n) {
