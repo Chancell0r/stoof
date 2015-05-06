@@ -12,6 +12,7 @@ int main(int argv, char** argc){
 	printf("%s \n", argc[1]);
 	char* something = string_reverse2(argc[1]);
 	printf("%s \n", something);
+	free(something);
 }
 
 void string_reverse1(char *string)
@@ -40,7 +41,7 @@ char* string_reverse2(const char *string){
 	int i;
 	int length = strlen(string);
 	char temp;
-	char* stringCopy = (char*) malloc(sizeof(char*) * (length + 1));
+	char* stringCopy = (char*) malloc(sizeof(char) * (length + 1));
 	memcpy(stringCopy, string, length + 1);
 	char *end = stringCopy;
     char *begin = stringCopy;
