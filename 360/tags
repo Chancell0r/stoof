@@ -1,0 +1,258 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLK_SZ	global_defs.h	24;"	d
+CC	makefile	/^CC = gcc$/;"	m
+CFLAGS	makefile	/^CFLAGS = -g -Wall -Wno-unused-label -Wno-parentheses -I include\/$/;"	m
+DBLOCK	global_defs.h	22;"	d
+DEF_DLINKS	global_defs.h	51;"	d
+DEF_DMODE	global_defs.h	48;"	d
+DEF_FMODE	global_defs.h	49;"	d
+DEF_IMG	k_t.h	25;"	d
+DEF_LMODE	global_defs.h	50;"	d
+DIR_RANGE	global_defs.h	42;"	d
+DIR_TOK	global_defs.h	46;"	d
+DIR_TYPE	global_defs.h	33;"	d
+EXT2_MAGIC	global_defs.h	28;"	d
+E_FILE_MODE	global_defs.h	/^} E_FILE_MODE;$/;"	t	typeref:enum:__anon1
+FILE_TYPE	global_defs.h	32;"	d
+GD0_BLK	global_defs.h	27;"	d
+ID_PER_BLK	global_defs.h	30;"	d
+IE_SZ	global_defs.h	25;"	d
+INO_PER_BLK	global_defs.h	29;"	d
+INO_SIZE	global_defs.h	31;"	d
+LIBS	makefile	/^LIBS = $/;"	m
+MAX_ARGS	vsh_t.h	16;"	d
+MAX_DBLOCKS	global_defs.h	41;"	d
+MAX_DEPTH	global_defs.h	21;"	d
+MAX_DIRECT	global_defs.h	36;"	d
+MAX_ENT	global_defs.h	40;"	d
+MAX_LINE	vsh_t.h	15;"	d
+MAX_MINOS	k_t.h	23;"	d
+MAX_MNTS	k_t.h	22;"	d
+MAX_NAME	global_defs.h	18;"	d
+MAX_OFS	k_t.h	24;"	d
+MAX_PATH	global_defs.h	20;"	d
+MAX_PROCS	k_t.h	21;"	d
+MAX_TMP	global_defs.h	19;"	d
+M_APPEND	global_defs.h	/^	M_APPEND$/;"	e	enum:__anon1
+M_READ	global_defs.h	/^	M_READ,$/;"	e	enum:__anon1
+M_READWRITE	global_defs.h	/^	M_READWRITE,$/;"	e	enum:__anon1
+M_WRITE	global_defs.h	/^	M_WRITE,$/;"	e	enum:__anon1
+NUM_FDS	global_defs.h	17;"	d
+OBJS	makefile	/^OBJS = shell.o \\$/;"	m
+OID_RANGE	global_defs.h	43;"	d
+ONAME	makefile	/^ONAME = sim$/;"	m
+ONE_INDIR	global_defs.h	37;"	d
+Organization	paper/proj.tex	/^\\newpage$/;"	s
+QUIT_STR	vsh_t.h	19;"	d
+ROOT_INO_NUM	global_defs.h	35;"	d
+SB_BLK	global_defs.h	26;"	d
+S_KILLED	global_defs.h	56;"	d
+S_RUNNING	global_defs.h	55;"	d
+S_STOPPED	global_defs.h	54;"	d
+THREE_INDIR	global_defs.h	39;"	d
+TID_RANGE	global_defs.h	44;"	d
+TOK_STR	vsh_t.h	17;"	d
+TWO_INDIR	global_defs.h	38;"	d
+U_ADMIN	global_defs.h	61;"	d
+U_REG	global_defs.h	62;"	d
+U_ROOT	global_defs.h	60;"	d
+U_SUPER	global_defs.h	59;"	d
+X_CRITICAL	global_defs.h	65;"	d
+X_DONE	global_defs.h	70;"	d
+X_NO_FTABLE	global_defs.h	73;"	d
+X_NO_KERNEL	global_defs.h	67;"	d
+X_NO_MEMORY	global_defs.h	69;"	d
+X_NO_PROCS	global_defs.h	72;"	d
+X_NO_ROOT	global_defs.h	71;"	d
+X_NO_SHELL	global_defs.h	68;"	d
+X_SUCCESS	global_defs.h	66;"	d
+X_UNKNOWN	global_defs.h	74;"	d
+cat_cmd	l2/cat.c	/^int cat_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+cd_cmd	l1/cd.c	/^int cd_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+chgrp_cmd	l1/chgrp.c	/^int chgrp_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+chmod_cmd	l1/chmod.c	/^int chmod_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+chown_cmd	l1/chown.c	/^int chown_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+close_cmd	l2/close.c	/^int close_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+cp_cmd	l2/cp.c	/^int cp_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+creat_cmd	l1/creat.c	/^int creat_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+do_stat	l1/stat.c	/^int do_stat(char *pathname, struct stat *stPtr, proc_t* pr)$/;"	f
+ext2_dir	global_defs.h	/^typedef struct ext2_dir_entry_2		ext2_dir;$/;"	t	typeref:struct:ext2_dir_entry_2
+false	global_defs.h	15;"	d
+fp_tb	func_addresses.h	/^typedef int (*fp_tb)( proc_t*, int, char** );$/;"	t
+gd	global_defs.h	/^typedef struct ext2_group_desc		gd;$/;"	t	typeref:struct:ext2_group_desc
+get_fp	func_addresses.c	/^fp_tb get_fp( char* string )$/;"	f
+i16	global_defs.h	/^typedef int16_t		i16;$/;"	t
+i32	global_defs.h	/^typedef int32_t		i32;$/;"	t
+i64	global_defs.h	/^typedef int64_t		i64;$/;"	t
+i8	global_defs.h	/^typedef int8_t		i8;$/;"	t
+inode	global_defs.h	/^typedef struct ext2_inode			inode;$/;"	t	typeref:struct:ext2_inode
+is_abs_path	string_funcs.c	/^bool is_abs_path( char* path )$/;"	f
+k_t	k_t.h	/^struct k_t$/;"	s
+k_t	k_t.h	/^typedef struct k_t k_t;$/;"	t	typeref:struct:k_t
+k_t_add_child	k_t.c	/^bool k_t_add_child( mino_t* parent, i32 inum, char* cname )$/;"	f
+k_t_add_dblocks_to_mino	k_t.c	/^bool k_t_add_dblocks_to_mino( int fd, u32 mino_num, u32 num )$/;"	f
+k_t_add_ino_to_fs	k_t.c	/^u32 k_t_add_ino_to_fs( int fd, inode* new_ino )$/;"	f
+k_t_close_oft_entry	k_t.c	/^bool k_t_close_oft_entry( mino_t* entry )$/;"	f
+k_t_del_dblocks_from_mino	k_t.c	/^bool k_t_del_dblocks_from_mino( int fd, u32 mino_num, u32 num )$/;"	f
+k_t_del_ino_from_fs	k_t.c	/^bool k_t_del_ino_from_fs( int fd, u32 inum )$/;"	f
+k_t_destroy	k_t.c	/^void k_t_destroy( k_t** krn )$/;"	f
+k_t_find_child_by_name	k_t.c	/^i32 k_t_find_child_by_name( mino_t* mino, char* cname )$/;"	f
+k_t_find_dir_num	k_t.c	/^int k_t_find_dir_num( mino_t* mino, char* dir )$/;"	f
+k_t_find_oft_entry	k_t.c	/^i32 k_t_find_oft_entry( mino_t* entry )$/;"	f
+k_t_flush_all_minos	k_t.c	/^bool k_t_flush_all_minos( void )$/;"	f
+k_t_flush_all_not_mounted_minos	k_t.c	/^bool k_t_flush_all_not_mounted_minos( void )$/;"	f
+k_t_flush_clean_minos	k_t.c	/^bool k_t_flush_clean_minos( void )$/;"	f
+k_t_flush_dirty_minos	k_t.c	/^bool k_t_flush_dirty_minos( void )$/;"	f
+k_t_flush_gd0	k_t.c	/^bool k_t_flush_gd0( int fd )$/;"	f
+k_t_flush_superblock	k_t.c	/^bool k_t_flush_superblock( int fd )$/;"	f
+k_t_get_blk	k_t.c	/^bool k_t_get_blk( char* dst, int fd, unsigned num )$/;"	f
+k_t_get_bmap_bit	k_t.c	/^bool k_t_get_bmap_bit( int fd, u32 bnum, bool* retv )$/;"	f
+k_t_get_imap_bit	k_t.c	/^bool k_t_get_imap_bit( int fd, u32 bnum, bool* retv )$/;"	f
+k_t_get_ino	k_t.c	/^bool k_t_get_ino( int fd, u32 num, inode* ino )$/;"	f
+k_t_get_mino	k_t.c	/^bool k_t_get_mino( int fd, u32 num, mino_t** dst )$/;"	f
+k_t_get_mnt_from_fd	k_t.c	/^mnt_t* k_t_get_mnt_from_fd( int fd )$/;"	f
+k_t_get_next_bmap_loc	k_t.c	/^u32 k_t_get_next_bmap_loc( int fd )$/;"	f
+k_t_get_next_imap_loc	k_t.c	/^u32 k_t_get_next_imap_loc( int fd )$/;"	f
+k_t_get_num_and_fd	k_t.c	/^bool k_t_get_num_and_fd( u32* num_dst, int* fd_dst, mino_t* cwd, char* path )$/;"	f
+k_t_init	k_t.c	/^bool k_t_init( k_t** krn )$/;"	f
+k_t_lseek	k_t.c	/^i64 k_t_lseek( i32 fd, i32 amount )$/;"	f
+k_t_mount_root	k_t.c	/^bool k_t_mount_root( char* path, mnt_t** dst )$/;"	f
+k_t_open_oft_entry	k_t.c	/^bool k_t_open_oft_entry( mino_t* entry, E_FILE_MODE mode, i32* fd_loc, char* path )$/;"	f
+k_t_p_dir_items	k_t.c	/^void k_t_p_dir_items( inode* ino, int fd, unsigned num )$/;"	f
+k_t_put_blk	k_t.c	/^bool k_t_put_blk( char* src, int fd, unsigned num )$/;"	f
+k_t_put_ino	k_t.c	/^bool k_t_put_ino( int fd, u32 num, inode* ino )$/;"	f
+k_t_put_mino	k_t.c	/^bool k_t_put_mino( u32 num )$/;"	f
+k_t_read	k_t.c	/^i32 k_t_read( i32 fd, i32 num, char* dst )$/;"	f
+k_t_remove_child	k_t.c	/^bool k_t_remove_child( mino_t* parent, char* cname )$/;"	f
+k_t_run	k_t.c	/^int k_t_run( void )$/;"	f
+k_t_set_bmap_bit	k_t.c	/^bool k_t_set_bmap_bit( int fd, u32 bnum, bool bval )$/;"	f
+k_t_set_imap_bit	k_t.c	/^bool k_t_set_imap_bit( int fd, u32 bnum, bool bval )$/;"	f
+k_t_set_mino_as_mounted	k_t.c	/^bool k_t_set_mino_as_mounted( int fd, u32 inum, mnt_t* mountpoint )$/;"	f
+k_t_set_mino_as_unmounted	k_t.c	/^bool k_t_set_mino_as_unmounted( int fd, u32 inum, mnt_t* mountpoint )$/;"	f
+k_t_start	k_t.c	/^int k_t_start( void )$/;"	f
+k_t_start_procs	k_t.c	/^bool k_t_start_procs( void )$/;"	f
+k_t_truncate_mino	k_t.c	/^bool k_t_truncate_mino( mino_t* mino )$/;"	f
+k_t_write	k_t.c	/^i32 k_t_write( i32 fd, i32 num, char* src)$/;"	f
+k_t_write_fs_to_disk	k_t.c	/^void k_t_write_fs_to_disk( void )$/;"	f
+kr	shell.c	/^k_t* kr = NULL;$/;"	v
+link_cmd	l1/link.c	/^int link_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+loc_basename	string_funcs.c	/^char* loc_basename( char* path_in )$/;"	f
+loc_dirname	string_funcs.c	/^char* loc_dirname( char* path_in )$/;"	f
+ls_cmd	l1/ls.c	/^int ls_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+lseek_cmd	l2/lseek.c	/^int lseek_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+m_argc	vsh_t.h	/^	int		m_argc;						\/\/number of args in m_argv$/;"	m	struct:vsh_t
+m_argv	vsh_t.h	/^	char*	m_argv[MAX_ARGS];			\/\/arguments passed in$/;"	m	struct:vsh_t
+m_busy	mnt_t.h	/^	bool		m_busy;$/;"	m	struct:mnt_t
+m_cmnt	k_t.h	/^	mnt_t*		m_cmnt;					\/\/current mount$/;"	m	struct:k_t
+m_cproc	k_t.h	/^	proc_t*		m_cproc;				\/\/current process$/;"	m	struct:k_t
+m_cwd	proc_t.h	/^	mino_t*		m_cwd;$/;"	m	struct:proc_t
+m_data_start	mnt_t.h	/^	int			m_data_start;$/;"	m	struct:mnt_t
+m_dev_name	mnt_t.h	/^	char		m_dev_name[MAX_NAME];$/;"	m	struct:mnt_t
+m_dirty	mino_t.h	/^	bool	m_dirty;$/;"	m	struct:mino_t
+m_fd	mino_t.h	/^	u16		m_fd;$/;"	m	struct:mino_t
+m_fd	mnt_t.h	/^	int			m_fd;$/;"	m	struct:mnt_t
+m_fds	proc_t.h	/^	i32			m_fds[NUM_FDS];$/;"	m	struct:proc_t
+m_first_ino	mnt_t.h	/^	int			m_first_ino;$/;"	m	struct:mnt_t
+m_ftx	vsh_t.h	/^	int		(*m_ftx)( proc_t*, int, char** );$/;"	m	struct:vsh_t
+m_gd0	mnt_t.h	/^	gd			m_gd0;$/;"	m	struct:mnt_t
+m_gid	proc_t.h	/^	i32			m_gid;$/;"	m	struct:proc_t
+m_ino	mino_t.h	/^	inode	m_ino;$/;"	m	struct:mino_t
+m_ino_num	mino_t.h	/^	u32		m_ino_num;$/;"	m	struct:mino_t
+m_ino_start	mnt_t.h	/^	int			m_ino_start;$/;"	m	struct:mnt_t
+m_line	vsh_t.h	/^	char	m_line[MAX_LINE];			\/\/input line$/;"	m	struct:vsh_t
+m_mino_tb	k_t.h	/^	mino_t*		m_mino_tb[MAX_MINOS];	\/\/array of memory inodes$/;"	m	struct:k_t
+m_minoptr	of_t.h	/^	mino_t*			m_minoptr;$/;"	m	struct:of_t
+m_mnt_name	mnt_t.h	/^	char		m_mnt_name[MAX_NAME];$/;"	m	struct:mnt_t
+m_mnt_tb	k_t.h	/^	mnt_t*		m_mnt_tb[MAX_MNTS];		\/\/array of mount points$/;"	m	struct:k_t
+m_mode	of_t.h	/^	E_FILE_MODE		m_mode;$/;"	m	struct:of_t
+m_mounted	mino_t.h	/^	bool	m_mounted;$/;"	m	struct:mino_t
+m_mountp	mino_t.h	/^	mnt_t*	m_mountp;$/;"	m	struct:mino_t
+m_name	of_t.h	/^	char			m_name[MAX_NAME];$/;"	m	struct:of_t
+m_num_blocks	mnt_t.h	/^	int			m_num_blocks;$/;"	m	struct:mnt_t
+m_num_inos	mnt_t.h	/^	int			m_num_inos;$/;"	m	struct:mnt_t
+m_of_tb	k_t.h	/^	of_t*		m_of_tb[MAX_OFS];$/;"	m	struct:k_t
+m_off	of_t.h	/^	i64				m_off;$/;"	m	struct:of_t
+m_parent	proc_t.h	/^	proc_t*		m_parent;$/;"	m	struct:proc_t
+m_parid	proc_t.h	/^	i32			m_parid;$/;"	m	struct:proc_t
+m_pid	proc_t.h	/^	i32			m_pid;$/;"	m	struct:proc_t
+m_proc	vsh_t.h	/^	proc_t* m_proc;$/;"	m	struct:vsh_t
+m_proc_tb	k_t.h	/^	proc_t*		m_proc_tb[MAX_PROCS];	\/\/array of processes$/;"	m	struct:k_t
+m_refc	mino_t.h	/^	u16		m_refc;$/;"	m	struct:mino_t
+m_refc	of_t.h	/^	i32				m_refc;$/;"	m	struct:of_t
+m_root_ino	mnt_t.h	/^	mino_t*		m_root_ino;$/;"	m	struct:mnt_t
+m_sb	mnt_t.h	/^	sb			m_sb;$/;"	m	struct:mnt_t
+m_status	proc_t.h	/^	i32			m_status;$/;"	m	struct:proc_t
+m_uid	proc_t.h	/^	i32			m_uid;$/;"	m	struct:proc_t
+main	shell.c	/^int main( int argc, char** argv )$/;"	f
+mino_t	mino_t.h	/^struct mino_t$/;"	s
+mino_t	mino_t.h	/^typedef struct mino_t mino_t;$/;"	t	typeref:struct:mino_t
+mino_t	mnt_t.h	/^typedef struct mino_t mino_t;$/;"	t	typeref:struct:mino_t
+mino_t_destroy	mino_t.c	/^void mino_t_destroy( mino_t** ino )$/;"	f
+mino_t_init	mino_t.c	/^bool mino_t_init( mino_t** ino )$/;"	f
+mino_t_make	mino_t.c	/^bool mino_t_make( mino_t* dst,$/;"	f
+mino_t_set_ino	mino_t.c	/^bool mino_t_set_ino($/;"	f
+mino_t_show	mino_t.c	/^void mino_t_show( mino_t* mi )$/;"	f
+mino_t_show_ino	mino_t.c	/^void mino_t_show_ino( inode* ino, unsigned loc )$/;"	f
+mkdir_cmd	l1/mkdir.c	/^int mkdir_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+mnt_t	mino_t.h	/^typedef struct mnt_t mnt_t;$/;"	t	typeref:struct:mnt_t
+mnt_t	mnt_t.h	/^struct mnt_t$/;"	s
+mnt_t	mnt_t.h	/^typedef struct mnt_t mnt_t;$/;"	t	typeref:struct:mnt_t
+mnt_t_add_root_mino	mnt_t.c	/^bool mnt_t_add_root_mino( mnt_t* target, mino_t* root )$/;"	f
+mnt_t_create	mnt_t.c	/^bool mnt_t_create( mnt_t* mt, char* path_to_img, char* folder_name, u32 inum )$/;"	f
+mnt_t_destroy	mnt_t.c	/^void mnt_t_destroy( mnt_t** mt )$/;"	f
+mnt_t_init	mnt_t.c	/^bool mnt_t_init( mnt_t** mt )$/;"	f
+mnt_t_lock	mnt_t.c	/^void mnt_t_lock( mnt_t* args )$/;"	f
+mnt_t_show	mnt_t.c	/^void mnt_t_show( mnt_t* mt )$/;"	f
+mnt_t_unlock	mnt_t.c	/^void mnt_t_unlock( mnt_t* args )$/;"	f
+mv_cmd	l2/mv.c	/^int mv_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+of_t	of_t.h	/^struct of_t$/;"	s
+of_t	of_t.h	/^typedef struct of_t of_t;$/;"	t	typeref:struct:of_t
+of_t_destroy	of_t.c	/^void of_t_destroy( of_t** ft )$/;"	f
+of_t_init	of_t.c	/^bool of_t_init( of_t** ft )$/;"	f
+open_cmd	l2/open.c	/^int open_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+pfd_cmd	l2/pfd.c	/^int pfd_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+print_ino	l0/print_ino.c	/^int print_ino( proc_t* pr, int argc, char** argv )$/;"	f
+print_minos	l0/print_minos.c	/^int print_minos( proc_t* pr, int argc, char** argv )$/;"	f
+print_procs	l0/print_procs.c	/^int print_procs( proc_t* pr, int argc, char** argv )$/;"	f
+print_vfs_mounts	l0/print_vfs_mounts.c	/^int print_vfs_mounts( proc_t* pr, int argc, char** argv )$/;"	f
+proc_t	proc_t.h	/^struct proc_t$/;"	s
+proc_t	proc_t.h	/^typedef struct proc_t proc_t;$/;"	t	typeref:struct:proc_t
+proc_t_add_fd_to_tb	proc_t.c	/^bool proc_t_add_fd_to_tb( proc_t* pr, i32 fd )$/;"	f
+proc_t_del_fd_from_tb	proc_t.c	/^bool proc_t_del_fd_from_tb( proc_t* pr, i32 fd )$/;"	f
+proc_t_destroy	proc_t.c	/^void proc_t_destroy( proc_t** pr )$/;"	f
+proc_t_get_next_fd_loc	proc_t.c	/^i32 proc_t_get_next_fd_loc( proc_t* pr )$/;"	f
+proc_t_init	proc_t.c	/^bool proc_t_init( proc_t** pr )$/;"	f
+proc_t_make	proc_t.c	/^bool proc_t_make($/;"	f
+pwd_cmd	l1/pwd.c	/^int pwd_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+read_cmd	l2/read.c	/^int read_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+rmdir_cmd	l1/rmdir.c	/^int rmdir_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+sb	global_defs.h	/^typedef struct ext2_super_block		sb;$/;"	t	typeref:struct:ext2_super_block
+show_bmap	l0/show_bmap.c	/^int show_bmap( proc_t* pr, int argc, char** argv )$/;"	f
+show_help	l0/show_help.c	/^int show_help( proc_t* pr, int argc, char** argv )$/;"	f
+show_imap	l0/show_imap.c	/^int show_imap( proc_t* pr, int argc, char** argv )$/;"	f
+split_path	string_funcs.c	/^bool split_path( char* path, unsigned ar_size, char** dst, int* num )$/;"	f
+stat_cmd	l1/stat.c	/^int stat_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+strip_nr	string_funcs.c	/^void strip_nr( char* string, unsigned len )$/;"	f
+switch_cmd	l0/switch.c	/^int switch_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+symblink_cmd	l1/symblink.c	/^int symblink_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+test_cmd	l0/test_func.c	/^int test_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+touch_cmd	l1/touch.c	/^int touch_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+true	global_defs.h	16;"	d
+u16	global_defs.h	/^typedef uint16_t	u16;$/;"	t
+u32	global_defs.h	/^typedef uint32_t	u32;$/;"	t
+u64	global_defs.h	/^typedef uint64_t	u64;$/;"	t
+u8	global_defs.h	/^typedef uint8_t		u8;$/;"	t
+unlink_cmd	l1/unlink.c	/^int unlink_cmd( proc_t* pr, int argc, char** argv )$/;"	f
+vsh_t	vsh_t.h	/^struct vsh_t$/;"	s
+vsh_t	vsh_t.h	/^typedef struct vsh_t vsh_t;$/;"	t	typeref:struct:vsh_t
+vsh_t_destroy	vsh_t.c	/^void vsh_t_destroy( vsh_t** sh )$/;"	f
+vsh_t_get_cmd	vsh_t.c	/^int vsh_t_get_cmd( vsh_t* sh )$/;"	f
+vsh_t_init	vsh_t.c	/^bool vsh_t_init( vsh_t** sh )$/;"	f
+vsh_t_run	vsh_t.c	/^int vsh_t_run( vsh_t* sh, proc_t* pr )$/;"	f
+vsh_t_run_cmd	vsh_t.c	/^int vsh_t_run_cmd( vsh_t* sh )$/;"	f
+write_cmd	l2/write.c	/^int write_cmd( proc_t* pr, int argc, char** argv )$/;"	f
