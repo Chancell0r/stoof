@@ -2,10 +2,12 @@ package com.kohls.trinaryTree;
 
 /**
  * Created by kohlsj on 1/17/16.
+ * <p/>
+ * Denotes the structure of each node for a TrinaryTree.
  */
-public class TrinaryTreeNode extends Object implements Comparable<TrinaryTreeNode> {
+public class TrinaryTreeNode implements Comparable<TrinaryTreeNode> {
 
-    private Integer value;
+    private int value;
 
     private TrinaryTreeNode leftNode;
 
@@ -13,15 +15,15 @@ public class TrinaryTreeNode extends Object implements Comparable<TrinaryTreeNod
 
     private TrinaryTreeNode rightNode;
 
-    public TrinaryTreeNode(Integer value) {
+    public TrinaryTreeNode(int value) {
         this.value = value;
     }
 
-    public Integer getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(Integer value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
@@ -54,12 +56,6 @@ public class TrinaryTreeNode extends Object implements Comparable<TrinaryTreeNod
         if (o == null) {
             return 1;
         }
-        if (value == o.getValue()) {
-            return 0;
-        } else if (value > o.getValue()) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return value - o.getValue();
     }
 }

@@ -16,8 +16,8 @@ public class TrinaryTreeTest {
     /**
      * tree setup for testing
      * ---3
-     * --2   5
-     * -1    4 6
+     * --2  5
+     * -1  4 6
      * -1
      */
     @Before
@@ -35,16 +35,16 @@ public class TrinaryTreeTest {
     @Test
     public void testInsertMultipleNodes() {
         TrinaryTreeNode node = tree.getRoot();
-        Assert.assertEquals((Integer) 3, node.getValue());
+        Assert.assertEquals(3, node.getValue());
         node = node.getLeftNode();
         //test left insert
-        Assert.assertEquals((Integer) 2, node.getValue());
+        Assert.assertEquals(2, node.getValue());
         node = node.getLeftNode();
         //test middle and multiple level insert
-        Assert.assertEquals((Integer) 1, node.getMiddleNode().getValue());
+        Assert.assertEquals(1, node.getMiddleNode().getValue());
         node = tree.getRoot().getRightNode();
         //test right insert
-        Assert.assertEquals((Integer) 5, node.getValue());
+        Assert.assertEquals(5, node.getValue());
     }
 
     @Test
@@ -52,23 +52,32 @@ public class TrinaryTreeTest {
         tree.delete(5);
         TrinaryTreeNode node = tree.getRoot();
         node = node.getRightNode();
-        Assert.assertEquals((Integer) 6, node.getValue());
-        Assert.assertEquals((Integer) 4, node.getLeftNode().getValue());
+        Assert.assertEquals(6, node.getValue());
+        Assert.assertEquals(4, node.getLeftNode().getValue());
     }
 
     @Test
     public void testDeleteWithNodeWithLeftNode() {
         tree.delete(2);
         TrinaryTreeNode node = tree.getRoot();
-        Assert.assertEquals((Integer) 1, node.getLeftNode().getValue());
+        Assert.assertEquals(1, node.getLeftNode().getValue());
     }
 
     @Test
     public void testDeleteWithNodeWithMiddleNode() {
         tree.delete(1);
         TrinaryTreeNode node = tree.getRoot().getLeftNode();
-        Assert.assertEquals((Integer) 1, node.getLeftNode().getValue());
+        Assert.assertEquals(1, node.getLeftNode().getValue());
         Assert.assertNull(node.getLeftNode().getMiddleNode());
+    }
+
+    @Test
+    public void testDeleteNodeWithARightNodeThatHasALeftNode() {
+        tree.delete(3);
+        TrinaryTreeNode node = tree.getRoot();
+        Assert.assertEquals(5, node.getValue());
+        Assert.assertEquals(6, node.getRightNode().getValue());
+        Assert.assertEquals(4, node.getRightNode().getLeftNode().getValue());
     }
 
 }

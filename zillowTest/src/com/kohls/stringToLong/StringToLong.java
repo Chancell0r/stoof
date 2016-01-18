@@ -3,7 +3,11 @@ package com.kohls.stringToLong;
 /**
  * Created by kohlsj on 1/17/16.
  * <p/>
+ * Converts a String to a Long using base 10. String provided can be denoted as positive
+ * or negative. String cannot overrun the maximum/minimum values that a long can be.
+ * <p/>
  * limitations: If a string is provided and has
+ * 1. If the string is in fact equal to Long.MIN_VALUE then it will fail
  * 1. if a string element is multiple bytes in length, it could be misrepresented as another value.
  * 2. The string can only be parsed as base 10, whereas some might want to parse base 2 etc. However it would be
  * easy to implement it going to a different base, but I did not find it necessary since we are only worried about the string
@@ -43,7 +47,7 @@ public class StringToLong {
     }
 
     /**
-     * Determine
+     * Determine if the value is positive or negative.
      *
      * @param string
      * @return

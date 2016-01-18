@@ -2,6 +2,16 @@ package com.kohls.trinaryTree;
 
 /**
  * Created by kohlsj on 1/17/16.
+ * <p/>
+ * Class used to denote a TrinaryTree.
+ * <p/>
+ * If a node is greater than parent node, it goes into right leaf.
+ * If a node is less than parent node, it goes into left leaf.
+ * If a node is equal to the parent node, it goes into middle leaf.
+ * <p/>
+ * Insertions/Deletions do not balance the tree after.
+ * <p/>
+ * Deletions will preserve values when deleting nodes.
  */
 public class TrinaryTree {
 
@@ -11,7 +21,7 @@ public class TrinaryTree {
         this.root = null;
     }
 
-    public TrinaryTree(Integer value) {
+    public TrinaryTree(int value) {
         this.root = new TrinaryTreeNode(value);
     }
 
@@ -47,7 +57,7 @@ public class TrinaryTree {
 
         TrinaryTreeNode currentNode = root;
 
-        deleteNode(currentNode, new TrinaryTreeNode(value));
+        root = deleteNode(currentNode, new TrinaryTreeNode(value));
     }
 
     /**
@@ -77,7 +87,7 @@ public class TrinaryTree {
     }
 
     /**
-     * recursively remove node from tree.
+     * recursively find the node to remove from tree.
      *
      * @param currentNode
      * @param nodeToDelete
@@ -95,30 +105,49 @@ public class TrinaryTree {
         } else if (comparison > 0) {
             currentNode.setRightNode(deleteNode(currentNode.getRightNode(), nodeToDelete));
         } else {
-            if (currentNode == root) {
-                return null;
-            }
-            //traverse all middle nodes first
-            if (currentNode.getMiddleNode() != null) {
-                currentNode.setMiddleNode(deleteNode(currentNode.getMiddleNode(), nodeToDelete));
-                return currentNode;
-            }
-            //if right node exists, replace current node with right node value
-            //and assign left node of new node with the current nodes left node.
-            if (currentNode.getRightNode() != null) {
-                TrinaryTreeNode rightNode = currentNode.getRightNode();
-                TrinaryTreeNode leftNode = currentNode.getLeftNode();
-                rightNode.setLeftNode(leftNode);
-                return rightNode;
-
-            }
-            //right node doesn't exist and replace current node with the current node's left node.
-            else if (currentNode.getLeftNode() != null) {
-                return currentNode.getLeftNode();
-            }
-            return null;
+            return handleNodeDeletion(currentNode, nodeToDelete);
         }
         return currentNode;
 
+    }
+
+    /**
+     * Handle the process of actually deleting the node
+     *
+     *
+     * @param currentNode
+     * @param nodeToDelete
+     * @return
+     */
+    private TrinaryTreeNode handleNodeDeletion(TrinaryTreeNode currentNode, TrinaryTreeNode nodeToDelete) {
+        //traverse all middle nodes first
+        if (currentNode.getMiddleNode() != null) {
+            currentNode.setMiddleNode(deleteNode(currentNode.getMiddleNode(), nodeToDelete));
+            return currentNode;
+        }
+        //if right node exists, replace current node with right node value
+        //and assign left node of new node with the current nodes left node.
+        if (currentNode.getRightNode() != null) {
+            TrinaryTreeNode rightNode = currentNode.getRightNode();
+            TrinaryTreeNode leftNode = currentNode.getLeftNode();
+            //if the right node has a left node, make sure to preserve it.
+            if (rightNode.getLeftNode() != null) {
+                if (rightNode.getRightNode() != null) {
+                    rightNode.getRightNode().setLeftNode(rightNode.getLeftNode());
+                }
+            }
+            rightNode.setLeftNode(leftNode);
+            return rightNode;
+
+        }
+        //right node doesn't exist and replace current node with the current node's left node.
+        else if (currentNode.getLeftNode() != null) {
+            return currentNode.getLeftNode();
+        }
+
+        if (currentNode == root) {
+            return null;
+        }
+        return null;
     }
 }
