@@ -114,7 +114,6 @@ public class TrinaryTree {
     /**
      * Handle the process of actually deleting the node
      *
-     *
      * @param currentNode
      * @param nodeToDelete
      * @return

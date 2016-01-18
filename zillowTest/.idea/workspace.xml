@@ -67,20 +67,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="StringToLong.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="StringToLong.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/kohls/stringToLong/StringToLong.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+                <state vertical-scroll-proportion="0.904661">
+                  <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TrinaryTree.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TrinaryTree.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/kohls/trinaryTree/TrinaryTree.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34957626">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
                   <folding>
                     <element signature="e#540#541#0" expanded="true" />
@@ -373,9 +373,9 @@
         <option value="$PROJECT_DIR$/src/com/kohls/Main.java" />
         <option value="$PROJECT_DIR$/src/com/kohls/trinaryTree/TrinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/com/kohls/test/StringToLongTest.java" />
-        <option value="$PROJECT_DIR$/src/com/kohls/stringToLong/StringToLong.java" />
         <option value="$PROJECT_DIR$/src/com/kohls/test/TrinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/com/kohls/trinaryTree/TrinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/com/kohls/stringToLong/StringToLong.java" />
       </list>
     </option>
   </component>
@@ -888,12 +888,12 @@
       <updated>1453056253183</updated>
       <workItem from="1453056264600" duration="10221000" />
       <workItem from="1453069463052" duration="11191000" />
-      <workItem from="1453094018622" duration="3227000" />
+      <workItem from="1453094018622" duration="3324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24639000" />
+    <option name="totallyTimeSpent" value="24736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
@@ -1516,14 +1516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kohls/stringToLong/StringToLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kohls/test/TrinaryTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30084747">
@@ -1562,12 +1554,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kohls/trinaryTree/TrinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34957626">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#572#573#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kohls/stringToLong/StringToLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.904661">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

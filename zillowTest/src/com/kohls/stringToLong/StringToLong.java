@@ -82,7 +82,7 @@ public class StringToLong {
                 throw new NumberFormatException("Non-number character supplied");
             }
 
-            //subtracting makes it easier for values to add correctly
+            //subtracting to make use of the difference between Long.MAX_VALUE and Long.MIN_VALUE
             value -= (currentChar - ZERO_CHAR) * Math.pow(BASE, i - startIndex);
 
             //since Long.MIN_VALUE is greater in value than Long.MAX_VALUE if the number is more negative than
