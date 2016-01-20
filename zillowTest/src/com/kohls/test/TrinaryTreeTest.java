@@ -77,7 +77,7 @@ public class TrinaryTreeTest {
         TrinaryTreeNode node = tree.getRoot();
         Assert.assertEquals(5, node.getValue());
         Assert.assertEquals(6, node.getRightNode().getValue());
-        Assert.assertEquals(4, node.getRightNode().getLeftNode().getValue());
+        Assert.assertEquals(4, node.getLeftNode().getValue());
     }
 
 }

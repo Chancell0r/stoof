@@ -50,14 +50,15 @@ public class TrinaryTree {
      *
      * @param value
      */
-    public void delete(Integer value) {
+    public boolean delete(Integer value) {
         if (value == null) {
-            return;
+            return false;
         }
 
         TrinaryTreeNode currentNode = root;
 
         root = deleteNode(currentNode, new TrinaryTreeNode(value));
+        return true;
     }
 
     /**
@@ -129,13 +130,13 @@ public class TrinaryTree {
         if (currentNode.getRightNode() != null) {
             TrinaryTreeNode rightNode = currentNode.getRightNode();
             TrinaryTreeNode leftNode = currentNode.getLeftNode();
+
             //if the right node has a left node, make sure to preserve it.
             if (rightNode.getLeftNode() != null) {
-                if (rightNode.getRightNode() != null) {
-                    rightNode.getRightNode().setLeftNode(rightNode.getLeftNode());
-                }
+                rightNode.getLeftNode().setLeftNode(leftNode);
+            } else {
+                rightNode.setLeftNode(leftNode);
             }
-            rightNode.setLeftNode(leftNode);
             return rightNode;
 
         }
@@ -144,9 +145,6 @@ public class TrinaryTree {
             return currentNode.getLeftNode();
         }
 
-        if (currentNode == root) {
-            return null;
-        }
         return null;
     }
 }
